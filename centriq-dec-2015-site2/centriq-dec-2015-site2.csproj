@@ -203,6 +203,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\github icon.png" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
@@ -215,6 +216,7 @@
     <Content Include="Content\IndPics\Ray.jpg" />
     <Content Include="Content\IndPics\Richard.jpg" />
     <Content Include="Content\IndPics\Tony.jpg" />
+    <Content Include="Content\linkedin icon.png" />
     <Content Include="Content\main.css" />
     <Content Include="Content\ParrallaxCss.css" />
     <Content Include="Content\Styles\bootstrap.css" />
