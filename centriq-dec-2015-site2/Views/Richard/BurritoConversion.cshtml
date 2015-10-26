@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "The Fabulous Flying Chipotle Burrito Brothers Currency Conversion";
+}
+
+
+<div class="col-md-12">
+    <h2>The Fabulous Flying Chipotle Burrito Brothers Currency Conversion</h2>
+
+    <div class="burrito-output">
+        <img src="~/images/burritoDance.gif" class="burrito-dance" />
+        <p>
+            You are considering the purchase of a @ViewBag.itemBought. It costs @(((decimal)ViewBag.itemCost).ToString("C2")).
+        </p>
+        <p>
+            To put things in perspective, you could purchase @ViewBag.burritoConversion Standard Chipotle Burritos* for this amount. (You could get @ViewBag.burritoWithGuacConversion if you add Guacamole.)
+        </p>
+        <p class="burrito-disclaimer">*For this conversion, a standard burrito is a Chipotle Chicken Burrito, which costs $6.50.</p>
+    </div>
+    <br />
+    <br />
+    @Html.ActionLink("Do Another Fabulous Burrito Conversion ", "BurritoConverter", "Richard")
+    <br/>
+    <br/>
+    <hr/>
+
+
+</div>

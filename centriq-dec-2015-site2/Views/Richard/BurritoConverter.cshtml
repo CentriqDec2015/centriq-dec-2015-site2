@@ -1,0 +1,46 @@
+﻿@model IEnumerable<centriq_dec_2015_site2.Models.RHGBurritoItemViewModel>
+
+
+@{
+    ViewBag.Title = "The Flying Chipotle Burrito Brothers Converter";
+}
+
+<div class="col-md-12">
+    <div class="burrito-input">
+        <h2>The Fabulous Flying Chipotle Burrito Brothers Currency Converter</h2>
+        <p>
+            In life, everything needs perspective. Before making any major purchase decisions, consider this:
+        </p>
+
+
+        @using (Html.BeginForm("BurritoConverter", "Richard", FormMethod.Post))
+        {
+
+            <fieldset>
+                <table summary="Chipotle Burrito Converter Input Table" id="CBCI" class="burrito-center">
+                    <tbody>
+                        <tr>
+                            <th scope="row">What item are you considering purchasing? &nbsp; &nbsp;</th>
+                            <td><input type="text" name="itemBought" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">How much does it cost?</th>
+                            <td><input type="text" name="itemCost" /></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><br /><input type="submit" value="Put It In Perspective!" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+        }
+    </div>
+    <br />
+    <br />
+    @Html.ActionLink("Home ", "Index", "Home")
+    <hr />
+    
+</div>
+

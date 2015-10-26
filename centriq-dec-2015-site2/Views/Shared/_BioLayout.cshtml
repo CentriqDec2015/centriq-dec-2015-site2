@@ -1,0 +1,13 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>About Me</h1>
+
+<div style="margin:auto;width:90%">
+    <div class="col col-md-2"><br /><img src="@RenderSection("ImageURL", true)" style="width:100px;height:100px;border-radius:10px;"></div>
+    <div class="col col-md-10"><h2>@RenderSection("Name", true)</h2></div>
+    <div><p>@RenderSection("BioContent", true)</p></div>
+    <div style="clear:both;"><br /></div>
+</div>
