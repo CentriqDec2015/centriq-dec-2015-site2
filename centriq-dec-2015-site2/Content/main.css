@@ -49,3 +49,82 @@
     margin: 0 auto;
     width: 80%
 }
+
+/*******************home parallax-bg----***********************/
+#home-parallax {
+  background: url("/Content/images/classPhoto2.jpg") no-repeat;
+  padding: 190px 0;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: #32c5d2;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.parallax-buttons {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.parallax-buttons a {
+  display: inline-block;
+  margin: 5px;
+}
+
+h1.typed-text {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.typed-text .element {
+  color: #32c5d2;
+}
+
+#home-parallax p {
+  color: #fff;
+}
+
+@media (max-width: 568px) {
+  h1.typed-text {
+    font-size: 25px;
+  }
+}
