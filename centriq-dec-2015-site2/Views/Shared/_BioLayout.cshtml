@@ -1,13 +1,23 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>About Me</h1>
-
 <div style="margin:auto;width:90%">
+    <h1>About Me</h1>
     <div class="col col-md-2"><br /><img src="@RenderSection("ImageURL", true)" style="width:100px;height:100px;border-radius:10px;"></div>
-    <div class="col col-md-10"><h2>@RenderSection("Name", true)</h2></div>
+    <div class="col col-md-10">
+        <h2>
+            @RenderSection("Name", true) &nbsp;
+            <a href="@RenderSection("LinkedInURL", false)">
+                <img src="~/Content/linkedin icon.png" style="width:20px;height:20px;margin-bottom:5px;border-radius:3px;" />
+            </a>
+            <a href="@RenderSection("GitHubURL", false)" target="blank">
+                <img src="~/Content/github icon.png" style="width:20px;height:20px;margin-bottom:5px;border-radius:3px;" />
+            </a>
+        </h2>
+    </div>
     <div><p>@RenderSection("BioContent", true)</p></div>
     <div style="clear:both;"><br /></div>
+
+    @RenderBody()
 </div>
