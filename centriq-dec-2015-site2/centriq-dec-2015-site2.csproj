@@ -203,6 +203,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ForResources\html-validator.png" />
+    <Content Include="Content\ForResources\stackoverflow.jpg" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
@@ -220,6 +222,8 @@
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="Content\Styles\Hover.css" />
+    <Content Include="Content\Styles\Resources.css" />
+    <Content Include="Content\Styles\Resources2.css" />
     <Content Include="Content\Styles\Site.css" />
     <Content Include="Content\Styles\style.css" />
     <Content Include="Content\ThankYouNeon2.jpg" />
@@ -308,7 +312,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\ForResources\" />
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Andrew\" />
     <Folder Include="Views\Nick\" />
