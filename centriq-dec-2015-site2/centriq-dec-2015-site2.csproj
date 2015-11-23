@@ -317,12 +317,12 @@
     <Content Include="Views\Jason\Bio.cshtml" />
     <Content Include="Views\Lillian\Bio.cshtml" />
     <Content Include="Views\Nick\NickBio.cshtml" />
+    <Content Include="Views\Andrew\Bio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
-    <Folder Include="Views\Andrew\" />
     <Folder Include="Views\Michael\" />
     <Folder Include="Views\Tony\" />
   </ItemGroup>
