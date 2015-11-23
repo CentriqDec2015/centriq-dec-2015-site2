@@ -8,6 +8,13 @@ namespace centriq_dec_2015_site.Controllers
 {
     public class RichardController : Controller
     {
+
+        public  ActionResult Bio()
+        {
+            return View();
+        }
+
+
         // GET: Richard
         public ActionResult Index()
         {
