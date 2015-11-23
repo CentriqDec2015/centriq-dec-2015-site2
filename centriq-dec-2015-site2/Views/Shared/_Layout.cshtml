@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title Our Class Website</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href="~/Content/main.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <link href="~/Content/Site.css" rel="stylesheet" />
 
 </head>
-<body id-="superbody">
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -42,11 +42,11 @@
             </div>
         </div>
     </div>
-    @RenderSection("paralax", false)
+    @RenderSection("parallax", false)
     <div class="body-content">
         @RenderBody()
     </div>
-        <footer>
+        @*<footer>
             <div class="navbar navbar-inverse navbar-fixed-bottom">
                 <div class="container">
                     <div class="col-md-4">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-</footer>
+</footer>*@
 
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Scripts/typed.js"></script>
