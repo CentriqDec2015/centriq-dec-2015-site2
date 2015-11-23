@@ -17,12 +17,18 @@ namespace centriq_dec_2015_site.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ContactUs()
         {
+            ViewBag.Message = "Our Contact Page";
             return View();
         }
 
-        public ActionResult ThankYou()
+
+
+
+
+
+        public ActionResult ReallyThankYou()
         {
             return View();
         }
