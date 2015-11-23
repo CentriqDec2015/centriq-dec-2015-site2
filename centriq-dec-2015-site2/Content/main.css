@@ -51,9 +51,11 @@
 }
 
 /*******************home parallax-bg----***********************/
+
 #home-parallax {
   background: url("/Content/images/classPhoto2.jpg") no-repeat;
   padding: 190px 0;
+  background-size: 100% auto;
 }
 
 .typed-cursor {

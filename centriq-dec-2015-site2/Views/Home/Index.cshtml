@@ -1,14 +1,18 @@
 ﻿@using centriq_dec_2015_site2.Models
 @model HomeIndexViewModel
+
+@section paralax {
 <!--parallax background no slider-->
 <section id="home-parallax" class="parallax" data-stellar-background-ratio="0.5">
     <div class="container text-center">
         <h1 class="typed-text">
             Our Class is
-            <span class="element" data-elements="Fun!, Ambitious!, Creative!, Talented!"></span>
+            <span class="element" data-elements="Creative!, Talented!, Ambitious!, Fun!,"></span>
         </h1>      
     </div>
 </section><!--parallax-background-->
+}
+
 
 @section Scripts {
 <script type="text/javascript">
@@ -23,20 +27,4 @@
         });
     });
 </script>
-
-<main class="container">
-    <h2>Master Blog</h2>
-    <div id="masterBlog" class="col-md-8 col-md-offset-2">
-        @*@foreach (var post in Model.Post)
-        {
-            for (int i = 0; i <= 5; i++)
-            {
-                <div class="blogPost">
-                    <h3>@Html.DisplayFor(item => post.Title) <span class="pull-right">@Html.DisplayFor(item => post.PostDate)</span></h3>
-                    @Html.Raw(post.Content)
-                </div>
-            }
-        }*@
-    </div>
-</main>
 }
