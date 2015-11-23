@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title Our Class Website</title>
+    <title>@ViewBag.Title - The Class</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href="~/Content/main.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    
     <link href="~/Content/Styles/Hover.css" rel="stylesheet" />
     <link href="~/Content/ParrallaxCss.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Styles/footer-basic-centered.css" rel="stylesheet" />
     @RenderSection("resourcescss", false)
 
 </head>
@@ -25,22 +25,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Class Site", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("The Class", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navigation navbar-collapse collapse">
                 <ul class="listNav nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    
-      
-                   
                     <li>@Html.ActionLink("Biographies", "Bios", "Home")</li>
                     <li>@Html.ActionLink("Burrito Converter", "BurritoConverter", "Richard")</li>
                     <li>@Html.ActionLink("Helpful Links", "Resources", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
-
-
                 </ul>
-              
             </div>
         </div>
     </div>
@@ -48,60 +42,87 @@
     <div class="body-content">
         @RenderBody()
     </div>
-        @*<footer>
-            <div class="navbar navbar-inverse navbar-fixed-bottom">
-                <div class="container">
-                    <div class="col-md-4">
-                        <ul class="colLink">
-                            <li>
-                                @Html.ActionLink("Ray Herrera", "Bio", "Raymundo")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Jake Lunn", "Index", "Jake")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Deanna Carr", "Index", "Deanna")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Matt Greenwood", "Index", "Matt")
-                            </li>
-                        </ul>
+    <footer class="footer-basic-centered">
+        <p class="footer-company-motto">Visit our Personal Sites</p>
+        <div class="col-md-4">
+            <p class="footer-links">
+                <a href="http://www.beauchampdevelopment.net" target="_blank">Nick Beauchamp</a> <br />
+                <a href="http://www.lillianfleming.net" target="_blank">Lillian Fleming</a> <br />
+                <a href="http://www.dmcarrdevelopment.net" target="_blank">Deanna Carr</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="footer-links">
+                <a href="http://www.jakelunn.net" target="_blank">Jake Lunn</a> <br />
+                <a href="http://www.jasonciemiega.net" target="_blank">Jason Ciemiega</a> <br />
+                <a href="http://www.hererradev.net" target="_blank">Ray Herrera</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p class="footer-links">
+                <a href="http://www.greenwoodcodes.com" target="_blank">Matt Greenwood</a> <br />
+                <a href="http://www.tonyharrison.com" target="_blank">Tony Harrison</a> <br />
+                <a href="http://www.thecodingdeacon.com" target="_blank">Richard Gross</a> <br />
+                <a href="http://www.andallenprojects.net" target="_blank">Andrew Allen</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+
+    @*<footer>
+                    <div class="navbar navbar-inverse navbar-fixed-bottom">
+                        <div class="container">
+                            <div class="col-md-4">
+                                <ul class="colLink">
+                                    <li>
+                                        @Html.ActionLink("Ray Herrera", "Bio", "Raymundo")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Jake Lunn", "Index", "Jake")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Deanna Carr", "Index", "Deanna")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Matt Greenwood", "Index", "Matt")
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="colLink">
+                                    <li>
+                                        @Html.ActionLink("Richard Gross", "Index", "Richard")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Nick Beauchamp", "Index", "Nick")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Andrew Allen", "Index", "Andrew")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Jason Ciemiega", "Index", "Jason")
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="colLink">
+                                    <li>
+                                        @Html.ActionLink("Lillian Fleming", "Index", "Lillian")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Tony Harrison", "Index", "Tony")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Sean Burns-Sprung", "Index", "Sean")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Micheal Helms", "Index", "Micheal")
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="colLink">
-                            <li>
-                                @Html.ActionLink("Richard Gross", "Index", "Richard")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Nick Beauchamp", "Index", "Nick")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Andrew Allen", "Index", "Andrew")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Jason Ciemiega", "Index", "Jason")
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="colLink">
-                            <li>
-                                @Html.ActionLink("Lillian Fleming", "Index", "Lillian")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Tony Harrison", "Index", "Tony")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Sean Burns-Sprung", "Index", "Sean")
-                            </li>
-                            <li>
-                                @Html.ActionLink("Micheal Helms", "Index", "Micheal")
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-</footer>*@
+        </footer>*@
 
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Scripts/typed.js"></script>
