@@ -15,7 +15,7 @@
     box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.48);
 }
 
-.burrito-input h2{
+    .burrito-input h2 {
     font-size: 1.5em;
     text-align: center;
 }
@@ -40,34 +40,45 @@
     height: 100px;
 }
 
-.burrito-disclaimer{
+.burrito-disclaimer {
     font-size: .7em;
 }
 
-.burrito-center{
+.burrito-center {
     display: block;
     margin: 0 auto;
-    width: 80%
+    width: 80%;
 }
 
-.burritoLeft{
+.burritoLeft {
     float: left;
-    width: 25%
+    width: 25%;
 }
 
-.burritoRight{
+.burritoRight {
     float: left;
     margin-left: 2%;
 }
 
-.burritoPerspectiveButton{
+.burritoPerspectiveButton {
     display: block;
     margin: 0 auto;
 }
 
-.burritoText{
-    width: 65%
+.burritoText {
+    width: 65%;
+    border-radius: .25em;
 }
+
+@media screen and (max-width: 650px) {
+    .burritoRight {
+        clear: both;
+        margin: .5em 0 1em;
+        width: 100%;
+    }
+}
+
+
 
 /*******************home parallax-bg----***********************/
 
@@ -89,35 +100,44 @@
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @-moz-keyframes blink {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .parallax-buttons {
   display: block;
   text-align: center;
@@ -150,7 +170,7 @@ h1.typed-text {
   }
 }
 
-.RHG-MTS{
+.RHG-MTS {
     font-size: .5em;
 }
 
