@@ -192,7 +192,6 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
-    <Compile Include="Models\HomeIndexViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\RHGBurritoItemViewModel.cs" />
@@ -312,10 +311,10 @@
     <Content Include="Views\Richard\BurritoConverter.cshtml" />
     <Content Include="Views\Shared\_BioLayout.cshtml" />
     <Content Include="Views\Jake\Bio.cshtml" />
+    <Content Include="Views\Richard\Bio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\ForResources\" />
     <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Andrew\" />
@@ -325,12 +324,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\centriq-dec-2015-site2.data\centriq-dec-2015-site2.data.csproj">
-      <Project>{f514c599-086b-445d-b41f-90268104c01b}</Project>
-      <Name>centriq-dec-2015-site2.data</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
