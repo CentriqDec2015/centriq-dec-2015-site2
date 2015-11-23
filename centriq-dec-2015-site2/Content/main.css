@@ -50,6 +50,25 @@
     width: 80%
 }
 
+.burritoLeft{
+    float: left;
+    width: 25%
+}
+
+.burritoRight{
+    float: left;
+    margin-left: 2%;
+}
+
+.burritoPerspectiveButton{
+    display: block;
+    margin: 0 auto;
+}
+
+.burritoText{
+    width: 65%
+}
+
 /*******************home parallax-bg----***********************/
 
 #home-parallax {

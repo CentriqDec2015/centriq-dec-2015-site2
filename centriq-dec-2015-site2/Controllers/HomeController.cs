@@ -47,18 +47,33 @@ namespace centriq_dec_2015_site.Controllers
             msg.Priority = MailPriority.High;
             msg.IsBodyHtml = true;
 
-                        
-            using (SmtpClient client = new SmtpClient("relay-hosting.secureserver.net"))
+            using (SmtpClient client = new SmtpClient())
             {
+                //Settings to use Centriq Gmail Relay
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential(
+                    "centriqRelay@gmail.com", "c3ntriQc3ntriQ");
+                client.Host = "smtp.gmail.com";
+                client.Port = 587;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+
                 client.Send(msg);
+
             }
 
                         
-            return RedirectToAction("ThankYou");
+            //using (SmtpClient client = new SmtpClient("relay-hosting.secureserver.net"))
+            //{
+            //    client.Send(msg);
+            //}
+
+                        
+            return RedirectToAction("ReallyThankYou");
 
         }
 
-        public ActionResult ThankYou()
+        public ActionResult ReallyThankYou()
         {
             return View();
         }
