@@ -208,10 +208,20 @@
     <Content Include="Content\github icon.png" />
     <Content Include="Content\ForResources\html-validator.png" />
     <Content Include="Content\ForResources\stackoverflow.jpg" />
+    <Content Include="Content\images\Ashlee Rhoades.jpg" />
+    <Content Include="Content\images\ChuckWieners.jpg" />
     <Content Include="Content\images\CatComputer3.gif" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
+    <Content Include="Content\images\EricReid.jpg" />
+    <Content Include="Content\images\ErinLongCromwell.jpg" />
+    <Content Include="Content\images\JasonPresley.jpg" />
+    <Content Include="Content\images\KeithSmith.jpg" />
+    <Content Include="Content\images\KieraRoberts.jpg" />
+    <Content Include="Content\images\MeganStarek.jpg" />
+    <Content Include="Content\images\Nicole %28Michalski%29 Trendel.jpg" />
+    <Content Include="Content\images\TinaPugh.jpg" />
     <Content Include="Content\images\logo\img-ClassLogoHighRez.jpg" />
     <Content Include="Content\images\logo\img-ClassLogoLowRez.jpg" />
     <Content Include="Content\images\logo\img-ClassLogoMidRez.jpg" />
@@ -324,6 +334,7 @@
     <Content Include="Views\Andrew\Bio.cshtml" />
     <Content Include="Views\Tony\Bio.cshtml" />
     <Content Include="Views\Matt\Bio.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -82,5 +82,9 @@ namespace centriq_dec_2015_site.Controllers
         {
             return View();
         }
+        public ActionResult ThankYou() 
+        { 
+            return View(); 
+        }
     }
 }
