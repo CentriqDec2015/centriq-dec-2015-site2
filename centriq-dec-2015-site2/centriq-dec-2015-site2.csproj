@@ -222,6 +222,9 @@
     <Content Include="Content\images\MeganStarek.jpg" />
     <Content Include="Content\images\Nicole %28Michalski%29 Trendel.jpg" />
     <Content Include="Content\images\TinaPugh.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoHighRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoLowRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoMidRez.jpg" />
     <Content Include="Content\IndPics\Andrew.jpg" />
     <Content Include="Content\IndPics\Deanna.jpg" />
     <Content Include="Content\IndPics\Jake.jpg" />
