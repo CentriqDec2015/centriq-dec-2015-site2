@@ -10,7 +10,6 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/Styles/Hover.css" rel="stylesheet" />
-
     <link href="~/Content/ParrallaxCss.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
 
@@ -43,6 +42,7 @@
             </div>
         </div>
     </div>
+    @RenderSection("paralax", false)
     <div class="body-content">
         @RenderBody()
     </div>
@@ -57,7 +57,7 @@
                             @Html.ActionLink("Jake Lunn", "Index", "Jake")
                         </li>
                         <li>
-                            @Html.ActionLink("Deanna", "Index", "Deanna")
+                            @Html.ActionLink("Deanna Carr", "Index", "Deanna")
                         </li>
                         <li>
                             @Html.ActionLink("Matt Greenwood", "Index", "Matt")

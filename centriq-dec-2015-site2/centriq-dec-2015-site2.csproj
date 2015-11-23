@@ -306,6 +306,7 @@
     <Content Include="Views\Richard\BurritoConversion.cshtml" />
     <Content Include="Views\Richard\BurritoConverter.cshtml" />
     <Content Include="Views\Shared\_BioLayout.cshtml" />
+    <Content Include="Views\Jake\Bio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
