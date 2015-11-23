@@ -16,9 +16,9 @@
 }
 
     .burrito-input h2 {
-        font-size: 1.5em;
-        text-align: center;
-    }
+    font-size: 1.5em;
+    text-align: center;
+}
 
 .burrito-output {
     display: block;
@@ -83,93 +83,97 @@
 /*******************home parallax-bg----***********************/
 
 #home-parallax {
-    background: url("/Content/images/classPhoto2.jpg") no-repeat;
-    padding: 190px 0;
-    background-size: 100% auto;
+  background: url("/Content/images/classPhoto2.jpg") no-repeat;
+  padding: 190px 0;
+  background-size: 100% auto;
 }
 
 .typed-cursor {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    color: #32c5d2;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: #32c5d2;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .parallax-buttons {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
 
-    .parallax-buttons a {
-        display: inline-block;
-        margin: 5px;
-    }
+.parallax-buttons a {
+  display: inline-block;
+  margin: 5px;
+}
 
 h1.typed-text {
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .typed-text .element {
-    color: #32c5d2;
+  color: #32c5d2;
 }
 
 #home-parallax p {
-    color: #fff;
+  color: #fff;
 }
 
 @media (max-width: 568px) {
-    h1.typed-text {
-        font-size: 25px;
-    }
+  h1.typed-text {
+    font-size: 25px;
+  }
 }
 
 .RHG-MTS {
     font-size: .5em;
+}
+
+.bioWrapper { /*This is for the personal bio pages. It allows the footer to be pushed to the bottom and not leave a white space.*/
+    min-height: 60vh;
 }
