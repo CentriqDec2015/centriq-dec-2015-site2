@@ -1,98 +1,84 @@
 ﻿
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title - My ASP.NET Application</title>
-        <meta name="description" content="Very Lightweight Portfolio Filter for Bootstrap">
-        <meta name="author" content="geedmo">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="description" content="Very Lightweight Portfolio Filter for Bootstrap">
+    <meta name="author" content="geedmo">
+    <link href="~/Content/ForResources/css/reset.css" rel="stylesheet" />
+    <link href="~/Content/ForResources/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/ForResources/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="~/Content/ForResources/css/gridex.css" rel="stylesheet" />
+    <link href="~/Content/Styles/footer-basic-centered.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
 
-        <link href="~/Content/ForResources/css/reset.css" rel="stylesheet" />
-        <link href="~/Content/ForResources/css/bootstrap.css" rel="stylesheet" />
-        <link href="~/Content/ForResources/css/bootstrap-responsive.css" rel="stylesheet" />
-        <link href="~/Content/ForResources/css/gridex.css" rel="stylesheet" />
-        
-        <style>
-            html, body {
-                height: 100%;
-                color: #656565;
-            }
+    <style>
+        html, body {
+            height: 100%;
+            color: #656565;
+        }
 
-            a:focus {
-                outline: none;
-            }
+        a:focus {
+            outline: none;
+        }
 
-            .wrapper {
-                min-height: 100%;
-                height: auto !important;
-                height: 100%;
-                margin: 0 auto -120px;
-            }
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -120px;
+        }
 
-            .footer, .push {
-                height: 120px;
-            }
+        .footer, .push {
+            height: 120px;
+        }
 
-            .clearfix {
-                clear: both;
-            }
-        </style>
-
-
-
-    </head>
-
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Class Site", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navigation navbar-collapse collapse">
-                    <ul class="listNav nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        
-                        <li>@Html.ActionLink("Biographies", "Bios", "Home")</li>
-                        <li>@Html.ActionLink("Burrito Converter", "BurritoConverter", "Richard")</li>
-                        <li>@Html.ActionLink("Helpful Links", "Resources", "Home")</li>
-                        <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+        .clearfix {
+            clear: both;
+        }
+    </style>
 
 
-                    </ul>
 
-                </div>
-            </div>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a class="brand" href="@Url.Action("Index", "Home")" style="margin-left:20px;">Helpful Resources</a>
+            <ul class="nav">
+                <li><a href="@Url.Action("Index", "Home")">Back to Home</a></li>
+            </ul>
         </div>
+    </div>
+
+    <div style="margin-bottom:50px"></div>
+    @RenderBody()
 
 
-        @RenderBody()
 
+    <div class="clearfix"></div>
 
-
+    <footer class="footer-basic-centered">
+        <div class="col-md-3 image-header">
+            <a href="@Url.Action("Index", "Home")"><img class="img-responsive center-block" src="~/Content/images/logo/img-ClassLogoHighRez.jpg" /></a>
+        </div>
         <div class="clearfix"></div>
+    </footer>
 
-        <footer>
-            
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Content/ForResources/ResourcesScripts/jquery.js"></script>
+    @*<script src="~/js/bootstrap-gridex.js"></script>*@
 
-            </footer>
+    <script src="~/Content/ForResources/ResourcesScripts/bootstrap-gridex.min.js"></script>
 
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="~/Content/ForResources/ResourcesScripts/jquery.js"></script>
-        @*<script src="~/js/bootstrap-gridex.js"></script>*@
+    <script>
+        $(function () {
+            $('.gridex').gridex();
+        })
+    </script>
 
-        <script src="~/Content/ForResources/ResourcesScripts/bootstrap-gridex.min.js"></script>
-
-        <script>
-            $(function () {
-                $('.gridex').gridex();
-            })
-        </script>
-
-    </body>
+</body>
 </html>
