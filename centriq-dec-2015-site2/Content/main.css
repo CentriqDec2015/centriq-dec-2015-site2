@@ -127,6 +127,10 @@ h1.typed-text {
 
 @media (max-width: 568px) {
   h1.typed-text {
-    font-size: 25px;   
+    font-size: 25px;
   }
+}
+
+.RHG-MTS{
+    font-size: .5em;
 }
