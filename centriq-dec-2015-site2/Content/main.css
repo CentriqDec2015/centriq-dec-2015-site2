@@ -153,3 +153,7 @@ h1.typed-text {
 .RHG-MTS{
     font-size: .5em;
 }
+
+.bioWrapper { /*This is for the personal bio pages. It allows the footer to be pushed to the bottom and not leave a white space.*/
+    min-height: 60vh;
+}
