@@ -177,3 +177,20 @@ h1.typed-text {
 .bioWrapper { /*This is for the personal bio pages. It allows the footer to be pushed to the bottom and not leave a white space.*/
     min-height: 60vh;
 }
+
+/*GOOGLE FONTS            Varela Round - for the body text | Audiowind - for headers*/
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Audiowide', cursive;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/*Header styling*/
+
+/*.navbar navbar-inverse navbar-fixed-top {
+    color: #ffffff;
+}*/
