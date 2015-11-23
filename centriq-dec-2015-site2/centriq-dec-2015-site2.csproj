@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -203,6 +205,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\github icon.png" />
+    <Content Include="Content\ForResources\html-validator.png" />
+    <Content Include="Content\ForResources\stackoverflow.jpg" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
@@ -215,11 +220,14 @@
     <Content Include="Content\IndPics\Ray.jpg" />
     <Content Include="Content\IndPics\Richard.jpg" />
     <Content Include="Content\IndPics\Tony.jpg" />
+    <Content Include="Content\linkedin icon.png" />
     <Content Include="Content\main.css" />
     <Content Include="Content\ParrallaxCss.css" />
     <Content Include="Content\Styles\bootstrap.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="Content\Styles\Hover.css" />
+    <Content Include="Content\Styles\Resources.css" />
+    <Content Include="Content\Styles\Resources2.css" />
     <Content Include="Content\Styles\Site.css" />
     <Content Include="Content\Styles\style.css" />
     <Content Include="Content\ThankYouNeon2.jpg" />
@@ -255,7 +263,6 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\typed.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Home\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -304,10 +311,12 @@
     <Content Include="Views\Richard\BurritoConversion.cshtml" />
     <Content Include="Views\Richard\BurritoConverter.cshtml" />
     <Content Include="Views\Shared\_BioLayout.cshtml" />
+    <Content Include="Views\Jake\Bio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\ForResources\" />
+    <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Andrew\" />
     <Folder Include="Views\Nick\" />
@@ -351,6 +360,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
