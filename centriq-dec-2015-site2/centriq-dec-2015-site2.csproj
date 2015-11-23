@@ -183,6 +183,7 @@
     <Compile Include="Controllers\JasonController.cs" />
     <Compile Include="Controllers\LillianController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MattController.cs" />
     <Compile Include="Controllers\NickController.cs" />
     <Compile Include="Controllers\RaymundoController.cs" />
     <Compile Include="Controllers\RichardController.cs" />
@@ -319,6 +320,7 @@
     <Content Include="Views\Nick\NickBio.cshtml" />
     <Content Include="Views\Andrew\Bio.cshtml" />
     <Content Include="Views\Tony\Bio.cshtml" />
+    <Content Include="Views\Matt\Bio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
