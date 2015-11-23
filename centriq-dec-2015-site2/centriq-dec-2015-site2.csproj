@@ -315,6 +315,7 @@
     <Content Include="Views\Jake\Bio.cshtml" />
     <Content Include="Views\Richard\Bio.cshtml" />
     <Content Include="Views\Jason\Bio.cshtml" />
+    <Content Include="Views\Nick\NickBio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -322,7 +323,6 @@
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Andrew\" />
     <Folder Include="Views\Michael\" />
-    <Folder Include="Views\Nick\" />
     <Folder Include="Views\Tony\" />
   </ItemGroup>
   <ItemGroup>
