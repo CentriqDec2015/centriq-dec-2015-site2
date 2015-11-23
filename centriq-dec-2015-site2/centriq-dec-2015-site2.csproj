@@ -319,6 +319,7 @@
     <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Andrew\" />
+    <Folder Include="Views\Michael\" />
     <Folder Include="Views\Nick\" />
     <Folder Include="Views\Tony\" />
   </ItemGroup>
