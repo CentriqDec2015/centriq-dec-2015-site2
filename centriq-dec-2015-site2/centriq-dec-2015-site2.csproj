@@ -210,6 +210,7 @@
     <Content Include="Content\ForResources\stackoverflow.jpg" />
     <Content Include="Content\images\Ashlee Rhoades.jpg" />
     <Content Include="Content\images\ChuckWieners.jpg" />
+    <Content Include="Content\images\CatComputer3.gif" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
