@@ -4,15 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace centriq_dec_2015_site.Controllers
+namespace centriq_dec_2015_site2.Controllers
 {
-    public class AndrewController : Controller
+    public class MattController : Controller
     {
-        // GET: Andrew
+        // GET: Matt
         public ActionResult Index()
         {
             return View();
         }
+
         public ActionResult Bio()
         {
             return View();

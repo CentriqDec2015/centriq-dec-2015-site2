@@ -1,56 +1,59 @@
 ﻿@model centriq_dec_2015_site2.Models.ContactViewModel
 
 @{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
 }
 
 
 
 <div id="section_header">
     <div class="container">
-        <h2><span>Contact</span> us</h2>
+        <h2><span>Contact</span> Us</h2>
     </div>
 </div>
 <div class="contact">
     <div class="container">
-        <div class="col-md-6">
-            <h3>Contact info</h3>
-            <p><span>Address:</span> 321 Awesome Street, Kansas City, MO 64111</p>
-            <p><span>Email:</span> info@companyname.com</p>
-            <p><span>Phone:</span> +1 800 123 1234</p>
-        </div>
-        <div class="col-md-6">
-            <h3>Get in touch</h3>
-            @using (Html.BeginForm())
-            {
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/Content/images/CatComputer3.gif" />
 
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        @Html.TextBoxFor(model => model.Name, "", new { @class = "form-control", @placeholder = "Name" })
-                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-6">
+                <h3>Get In Touch</h3>
+                @using (Html.BeginForm())
+                {
+
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.Name, "", new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.Email, "", new { @class = "form-control", @placeholder = "Email" })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.Subject, "", new { @class = "form-control", @placeholder = "Subject" })
+                            @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.TextAreaFor(model => model.Message, new { @class = "form-control", @placeholder = "Message" })
+                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                        </div>
+
+
+
+                        <div class="clearfix"> </div>
+                        <button class="btn" type="submit">Send Message</button>
                     </div>
-
-                    <div class="form-group">
-                        @Html.TextBoxFor(model => model.Email, "", new { @class = "form-control", @placeholder = "Email" })
-                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                    </div>
-
-                    <div class="form-group">
-                        @Html.TextBoxFor(model => model.Subject, "", new { @class = "form-control", @placeholder = "Subject" })
-                        @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
-                    </div>
-
-                    <div class="form-group">
-                        @Html.TextAreaFor(model => model.Message, new { @class = "form-control", @placeholder = "Message" })
-                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
-                    </div>
-
-
-
-                    <div class="clearfix"> </div>
-                    <button class="btn" type="submit">Send Message</button>
-                </div>
-            }
+                }
+            </div>
         </div>
     </div>
+</div>
+<div class="clearfix">
+
 </div>

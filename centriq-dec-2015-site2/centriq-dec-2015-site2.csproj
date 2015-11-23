@@ -183,6 +183,7 @@
     <Compile Include="Controllers\JasonController.cs" />
     <Compile Include="Controllers\LillianController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MattController.cs" />
     <Compile Include="Controllers\NickController.cs" />
     <Compile Include="Controllers\RaymundoController.cs" />
     <Compile Include="Controllers\RichardController.cs" />
@@ -192,7 +193,6 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
-    <Compile Include="Models\HomeIndexViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\RHGBurritoItemViewModel.cs" />
@@ -257,9 +257,25 @@
     <Content Include="Content\ForResources\ResourcesScripts\bootstrap-gridex.min.js" />
     <Content Include="Content\ForResources\ResourcesScripts\jquery.js" />
     <Content Include="Content\github icon.png" />
+    <Content Include="Content\ForResources\html-validator.png" />
+    <Content Include="Content\ForResources\stackoverflow.jpg" />
+    <Content Include="Content\images\Ashlee Rhoades.jpg" />
+    <Content Include="Content\images\ChuckWieners.jpg" />
+    <Content Include="Content\images\CatComputer3.gif" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
+    <Content Include="Content\images\EricReid.jpg" />
+    <Content Include="Content\images\ErinLongCromwell.jpg" />
+    <Content Include="Content\images\JasonPresley.jpg" />
+    <Content Include="Content\images\KeithSmith.jpg" />
+    <Content Include="Content\images\KieraRoberts.jpg" />
+    <Content Include="Content\images\MeganStarek.jpg" />
+    <Content Include="Content\images\Nicole %28Michalski%29 Trendel.jpg" />
+    <Content Include="Content\images\TinaPugh.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoHighRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoLowRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoMidRez.jpg" />
     <Content Include="Content\IndPics\Andrew.jpg" />
     <Content Include="Content\IndPics\Deanna.jpg" />
     <Content Include="Content\IndPics\Jake.jpg" />
@@ -285,6 +301,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\burritoDance.gif" />
+    <Content Include="images\pandafavicon.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\bootstrap-theme.css.map" />
@@ -295,6 +312,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Styles\footer-basic-centered.css" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -324,7 +342,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -362,6 +379,14 @@
     <Content Include="Views\Richard\BurritoConverter.cshtml" />
     <Content Include="Views\Shared\_BioLayout.cshtml" />
     <Content Include="Views\Jake\Bio.cshtml" />
+    <Content Include="Views\Richard\Bio.cshtml" />
+    <Content Include="Views\Jason\Bio.cshtml" />
+    <Content Include="Views\Lillian\Bio.cshtml" />
+    <Content Include="Views\Nick\NickBio.cshtml" />
+    <Content Include="Views\Andrew\Bio.cshtml" />
+    <Content Include="Views\Tony\Bio.cshtml" />
+    <Content Include="Views\Matt\Bio.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Shared\_ResourceLayout.cshtml" />
     <Content Include="Views\Nick\NickBio.cshtml" />
   </ItemGroup>
@@ -369,18 +394,13 @@
     <Folder Include="App_Data\" />
     <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
+    <Folder Include="Views\Michael\" />
     <Folder Include="Views\Andrew\" />
     <Folder Include="Views\Tony\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\centriq-dec-2015-site2.data\centriq-dec-2015-site2.data.csproj">
-      <Project>{f514c599-086b-445d-b41f-90268104c01b}</Project>
-      <Name>centriq-dec-2015-site2.data</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

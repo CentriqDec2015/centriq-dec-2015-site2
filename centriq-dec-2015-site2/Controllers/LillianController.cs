@@ -17,6 +17,29 @@ namespace centriq_dec_2015_site.Controllers
             return View();
         }
 
+        public ActionResult Bio()
+        {
+            return View();
+        }
+
+
+
+
+        public ActionResult ContactUs()
+        {
+            ViewBag.Message = "Our Contact Page";
+            return View();
+        }
+
+
+
+
+
+
+        public ActionResult ReallyThankYou()
+        {
+            return View();
+        }
 
 
 
