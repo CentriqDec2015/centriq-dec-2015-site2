@@ -315,6 +315,7 @@
     <Content Include="Views\Jake\Bio.cshtml" />
     <Content Include="Views\Richard\Bio.cshtml" />
     <Content Include="Views\Jason\Bio.cshtml" />
+    <Content Include="Views\Lillian\Bio.cshtml" />
     <Content Include="Views\Nick\NickBio.cshtml" />
   </ItemGroup>
   <ItemGroup>
