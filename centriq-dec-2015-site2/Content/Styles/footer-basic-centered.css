@@ -37,7 +37,7 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
 
 	.footer-basic-centered{
 		padding: 35px;
@@ -59,4 +59,4 @@
 	.footer-basic-centered .footer-links a{
 		line-height: 1.8;
 	}
-}
+}*/
