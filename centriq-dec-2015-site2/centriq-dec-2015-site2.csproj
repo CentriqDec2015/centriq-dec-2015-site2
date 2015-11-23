@@ -212,6 +212,9 @@
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoHighRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoLowRez.jpg" />
+    <Content Include="Content\images\logo\img-ClassLogoMidRez.jpg" />
     <Content Include="Content\IndPics\Andrew.jpg" />
     <Content Include="Content\IndPics\Deanna.jpg" />
     <Content Include="Content\IndPics\Jake.jpg" />

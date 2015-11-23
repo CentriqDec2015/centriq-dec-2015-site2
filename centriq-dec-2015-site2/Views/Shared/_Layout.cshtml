@@ -1,9 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - The Class</title>
+    <title>The Class - @ViewBag.Title</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     @Styles.Render("~/Content/css")
@@ -17,7 +21,7 @@
     <link href="~/Content/main.css" rel="stylesheet" />
 
 </head>
-<body>
+<body style="padding-top:0px;">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -44,29 +48,36 @@
         @RenderBody()
     </div>
     <footer class="footer-basic-centered">
-        <p class="footer-company-motto">Visit our Personal Sites</p>
-        <div class="col-md-4">
-            <p class="footer-links">
-                <a href="http://www.beauchampdevelopment.net" target="_blank">Nick Beauchamp</a> <br />
-                <a href="http://www.lillianfleming.net" target="_blank">Lillian Fleming</a> <br />
-                <a href="http://www.dmcarrdevelopment.net" target="_blank">Deanna Carr</a>
-            </p>
+
+        <div class="col-md-3 image-header">
+            <img class="img-responsive center-block" src="~/Content/images/logo/img-ClassLogoHighRez.jpg" />
         </div>
-        <div class="col-md-4">
-            <p class="footer-links">
-                <a href="http://www.jakelunn.net" target="_blank">Jake Lunn</a> <br />
-                <a href="http://www.jasonciemiega.net" target="_blank">Jason Ciemiega</a> <br />
-                <a href="http://www.hererradev.net" target="_blank">Ray Herrera</a> <br />
-                <a href="http://www.andallenprojects.net" target="_blank">Andrew Allen</a>
-            </p>
+        <div class="col-md-9">
+            <p class="footer-company-motto">Visit our Personal Sites</p>
+            <div class="col-md-4">
+                <p class="footer-links">
+                    <a href="http://www.beauchampdevelopment.net" target="_blank">Nick Beauchamp</a> <br />
+                    <a href="http://www.lillianfleming.net" target="_blank">Lillian Fleming</a> <br />
+                    <a href="http://www.dmcarrdevelopment.net" target="_blank">Deanna Carr</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="footer-links">
+                    <a href="http://www.jakelunn.net" target="_blank">Jake Lunn</a> <br />
+                    <a href="http://www.jasonciemiega.net" target="_blank">Jason Ciemiega</a> <br />
+                    <a href="http://www.hererradev.net" target="_blank">Ray Herrera</a> <br />
+                    <a href="http://www.andallenprojects.net" target="_blank">Andrew Allen</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="footer-links">
+                    <a href="http://www.greenwoodcodes.com" target="_blank">Matt Greenwood</a> <br />
+                    <a href="http://www.tonyharrison.com" target="_blank">Tony Harrison</a> <br />
+                    <a href="http://www.thecodingdeacon.com" target="_blank">Richard Gross</a> <br />
+                </p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <p class="footer-links">
-                <a href="http://www.greenwoodcodes.com" target="_blank">Matt Greenwood</a> <br />
-                <a href="http://www.tonyharrison.com" target="_blank">Tony Harrison</a> <br />
-                <a href="http://www.thecodingdeacon.com" target="_blank">Richard Gross</a> <br />
-            </p>
-        </div>
+
         <div class="clearfix"></div>
     </footer>
 
