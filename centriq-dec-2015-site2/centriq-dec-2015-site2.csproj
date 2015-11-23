@@ -208,6 +208,7 @@
     <Content Include="Content\github icon.png" />
     <Content Include="Content\ForResources\html-validator.png" />
     <Content Include="Content\ForResources\stackoverflow.jpg" />
+    <Content Include="Content\images\CatComputer3.gif" />
     <Content Include="Content\images\classPhoto1.jpg" />
     <Content Include="Content\images\classPhoto2.jpg" />
     <Content Include="Content\images\classPhoto3.jpg" />
