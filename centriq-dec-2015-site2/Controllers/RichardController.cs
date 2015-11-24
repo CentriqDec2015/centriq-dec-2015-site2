@@ -28,18 +28,31 @@ namespace centriq_dec_2015_site.Controllers
         }
 
         [HttpPost]
-        public ActionResult BurritoConverter(string itemBought, decimal itemCost)
+        public ActionResult BurritoConverter(string itemBought, string itemCost)
         {
             ViewBag.itemBought = itemBought;
             ViewBag.itemCost = itemCost;
-            decimal chickenBurrito = 6.50M;
-            decimal chickBurritoAddGuac = 8.45M;
-            decimal bigBurritoConverstion = itemCost / chickenBurrito;
-            decimal bigBurritoAddGuacConversion = itemCost / chickBurritoAddGuac;
-            int burritoWithGuacConversion = (int)bigBurritoAddGuacConversion;
-            int burritoConversion = (int)bigBurritoConverstion;
-            ViewBag.burritoConversion = burritoConversion;
-            ViewBag.burritoWithGuacConversion = burritoWithGuacConversion;
+            decimal itemDecimal;
+            int burritoWithGuacConversion;
+            int burritoConversion;
+
+            if (Decimal.TryParse(itemCost, out itemDecimal))
+            {
+                ViewBag.itemCost = itemDecimal;
+                decimal chickenBurrito = 6.50M;
+                decimal chickBurritoAddGuac = 8.45M;
+                decimal bigBurritoConverstion = itemDecimal / chickenBurrito;
+                decimal bigBurritoAddGuacConversion = itemDecimal / chickBurritoAddGuac;
+                burritoWithGuacConversion = (int)bigBurritoAddGuacConversion;
+                burritoConversion = (int)bigBurritoConverstion;
+                ViewBag.burritoConversion = burritoConversion;
+                ViewBag.burritoWithGuacConversion = burritoWithGuacConversion;
+            }
+            else
+            {
+                return View("BurritoError");
+            }
+            
 
             return View("BurritoConversion");
         }

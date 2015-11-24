@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "BurritoError";
+}
+<div class="col-md-2"></div>
+<div class="col-md-8">
+    <br />  <br />  <br />  <br />  
+    <h2>The Fabulous Flying Chipotle Burrito Brothers Currency Conversion Mighty Guacamole Error!!!!</h2>
+
+    <div class="burritoError">
+        <img src="~/images/tacoAboutIt.jpg" class="burrito-dance" />
+        <p>
+            You are considering the purchase of a @ViewBag.itemBought.
+        </p>
+        <p>
+            However, you did not enter a valid number for the price. You have made the burritos sad. Please go back and try entering the price again.
+        </p>
+        <p>
+            Good luck. And may the burrito be ever in your favor.
+        </p>
+        <p class="burrito-disclaimer">* Be sure to use only numbers and a single decimal point. Do not add dollar signs or any other currency marks. No burritos were harmed in the making of this converter.</p>
+    </div> 
+    <br />
+    <br />
+    @Html.ActionLink("Do Another Fabulous Burrito Conversion ", "BurritoConverter", "Richard")
+    <br />
+    <br />
+    <hr />
+</div>
+<div class="clearfix"></div>

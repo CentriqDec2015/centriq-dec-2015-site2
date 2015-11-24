@@ -302,6 +302,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\burritoDance.gif" />
     <Content Include="images\pandafavicon.jpg" />
+    <Content Include="images\tacoAboutIt.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\bootstrap-theme.css.map" />
@@ -389,14 +390,13 @@
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Shared\_ResourceLayout.cshtml" />
     <Content Include="Views\Nick\NickBio.cshtml" />
+    <Content Include="Views\Richard\BurritoError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="jasons stuff\" />
     <Folder Include="Views\Andrews\" />
     <Folder Include="Views\Michael\" />
-    <Folder Include="Views\Andrew\" />
-    <Folder Include="Views\Tony\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
