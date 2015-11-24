@@ -235,3 +235,7 @@ body {
     height: 80vh; /*Added so the footer doesn't get chopped off when on big screens.*/
 }
 
+/*Thank You Page*/
+#thankyou-wrapper {
+    min-height: 100vh;
+}
