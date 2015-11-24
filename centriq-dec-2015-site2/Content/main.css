@@ -230,4 +230,8 @@ body {
     color: #ffffff;
 }*/
 
+/*Burrito Converter*/
+#burrito-converter-wrapper {
+    height: 80vh; /*Added so the footer doesn't get chopped off when on big screens.*/
+}
 
