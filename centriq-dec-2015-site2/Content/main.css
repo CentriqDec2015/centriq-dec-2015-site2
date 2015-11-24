@@ -1,6 +1,7 @@
-﻿.body {
-    padding-top: 60px;
+﻿body #Index {
+    background-color: #222222;
 }
+
 .burrito-input {
     display: block;
     margin: 60px auto 0;
@@ -98,7 +99,7 @@
     background: url("/Content/images/classPhoto2.jpg") no-repeat;
     padding: 190px 0;
     background-size: 100% auto;
-    min-height: 800px;
+    min-height: 80vh;
 }
 
 .typed-cursor {
@@ -183,6 +184,18 @@ h1.typed-text {
     }
 }
 
+@media (max-width: 768px) {
+    #home-parallax{
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    #home-parallax {
+        min-height: 80vh;
+    }
+}
+
 /*parallax */
 .textShadow {
     -webkit-text-stroke: 1px black;
@@ -238,4 +251,8 @@ body {
 /*Thank You Page*/
 #thankyou-wrapper {
     min-height: 100vh;
+}
+
+#contact-us-wrapper {
+    min-height: 80vh;
 }
